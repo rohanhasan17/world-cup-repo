@@ -78,4 +78,45 @@ body {
     width: 312px;
     height: 312px;
     background-color: #161616;
+    border-radius: 10px;
+    margin-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* .left-part-item {
+    width: 252px;
+    height: 64px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+} */
+
+.left-part-item1 a {
+    background-color: white;
+    padding: 17px 39px;
+    color: #161616;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.left-part-item2 a {
+    background-color: white;
+    padding: 17px 79px;
+    color: #161616;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.left-part-item3 a {
+    background-color: red;
+    padding: 17px 104px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
 }
