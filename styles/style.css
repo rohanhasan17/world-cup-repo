@@ -159,7 +159,12 @@ body {
     color: #161616;
     font-size: 17px;
     font-weight: 600;
+}
 
+.box-author a:hover {
+    background-color: red;
+    color: white;
+    border: 2px solid green;
 }
 
 .box-author #transfer-text {
