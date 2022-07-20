@@ -7,6 +7,10 @@
     border-radius: 10px;
 }
 
+.left-part-item1 a:hover {
+    background-color: red;
+}
+
 .left-part-item3 a {
     background-color: white;
     padding: 17px 104px;
@@ -56,4 +60,24 @@
     line-height: 30px;
     margin-bottom: 10px;
     color: #161616;
+}
+
+@media screen and (max-width:420px) {
+    .match-boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .left-part-item3 a {
+        padding: 17px 64px;
+    }
+}
+
+@media screen and (min-width:420px) and (max-width:1000px) {
+    .match-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .left-part-item3 a {
+        border: 1px solid #16161633;
+    }
 }

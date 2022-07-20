@@ -45,10 +45,6 @@ body {
     line-height: 80px;
 }
 
-.banner-author h1:hover {
-    color: lightblue;
-}
-
 .banner-author p {
     margin-top: 20px;
     margin-bottom: 40px;
@@ -64,7 +60,7 @@ body {
 }
 
 .banner-author a:hover {
-    background-color: rgb(81, 10, 83);
+    background-color: purple;
 }
 
 .fa-angle-right {
@@ -84,6 +80,7 @@ body {
 /* Middle Section Styles */
 .middle-items {
     display: flex;
+    justify-content: center;
 }
 
 .left-part {
@@ -98,14 +95,6 @@ body {
     justify-content: space-evenly;
 }
 
-/* .left-part-item {
-    width: 252px;
-    height: 64px;
-    margin: auto;
-    background-color: white;
-    border-radius: 10px;
-} */
-
 .left-part-item1 a {
     background-color: white;
     padding: 17px 39px;
@@ -113,6 +102,17 @@ body {
     font-size: 20px;
     line-height: 30px;
     border-radius: 10px;
+    font-weight: 600;
+}
+
+.left-part-item1 a:hover {
+    background-color: purple;
+    color: white;
+}
+
+.left-part-item2 a:hover {
+    background-color: purple;
+    color: white;
 }
 
 .left-part-item2 a {
@@ -122,6 +122,7 @@ body {
     font-size: 20px;
     line-height: 30px;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .left-part-item3 a {
@@ -131,6 +132,7 @@ body {
     font-size: 20px;
     line-height: 30px;
     border-radius: 10px;
+    font-weight: 600;
 }
 
 .transfers-boxes {
@@ -143,7 +145,7 @@ body {
 .transfer-box {
     width: 312px;
     height: 362px;
-    border: 1px solid #16161614;
+    border: 1px solid #16161633;
     border-radius: 10px;
 }
 
@@ -196,7 +198,6 @@ footer {
     height: 444px;
     background-color: #161616;
     text-align: center;
-
 }
 
 footer h1 {
@@ -251,4 +252,202 @@ hr {
     margin-right: 23px;
 }
 
-/* Upcoming Match Styles */
+/* ------------------------
+Media Quarei 
+-------------------------*/
+/* Mobile Devices*/
+@media screen and (max-width:420px) {
+
+    /* Banner  */
+    .banner-items {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: auto;
+        background: #161616;
+        margin-top: 50px;
+    }
+
+    .banner-author {
+        width: 400px;
+        height: 180px;
+        margin: 30px 0px;
+        color: white;
+        text-align: center;
+    }
+
+    .banner-author h1 {
+        font-size: 30px;
+        line-height: 40px;
+        padding: 0px 40px;
+    }
+
+    .banner-author p {
+        padding: 0px 20px;
+        margin-bottom: 30px;
+    }
+
+    .banner-marcelo {
+        width: 300px;
+        height: 245px;
+        margin: auto;
+        margin-top: 83px;
+    }
+
+    /* Middle Section Styles */
+    .middle-items {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-part {
+        background-color: white;
+        text-align: center;
+    }
+
+    .left-part-item1 a,
+    .left-part-item2 a {
+        padding: 17px 39px;
+        border: 1px solid #16161633;
+    }
+
+    .left-part-item3 a {
+        padding: 17px 62px;
+        border: 1px solid #16161633;
+    }
+
+    .transfers-boxes {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Footer */
+    footer {
+        height: 540px;
+    }
+
+    footer h1 {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        font-weight: 600;
+        font-size: 50px;
+        line-height: 60px;
+        color: white;
+        margin-top: 130px;
+    }
+
+    hr {
+        width: 360px;
+    }
+
+    .footer-items ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-items ul li {
+        margin-right: 0px;
+        padding-bottom: 15px;
+    }
+
+    .social-icon {
+        margin-top: 25px;
+    }
+}
+
+/* Tab Devices*/
+@media screen and (min-width:420px) and (max-width:1000px) {
+    .banner-items {
+        display: flex;
+        width: 900px;
+        height: 500px;
+        margin: auto;
+        background: #161616;
+        border-radius: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .banner-author {
+        width: 600px;
+        height: 180px;
+        color: white;
+    }
+
+    .banner-author h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    .banner-marcelo {
+        width: 620px;
+        height: 650px;
+        margin-top: 50px;
+    }
+
+    /* Middle Section Styles */
+    .middle-items {
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-part {
+        width: 900px;
+        height: 120px;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 8px;
+    }
+
+    .left-part-item1 a,
+    .left-part-item2 a,
+    .left-part-item2 a {
+        border: 1px solid #16161633;
+    }
+
+    .transfers-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transfer-box {
+        width: 400px;
+        height: 362px;
+        border: 1px solid #16161633;
+        border-radius: 10px;
+    }
+
+    .transfer-box img {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        height: 500px;
+    }
+
+    hr {
+        width: 740px;
+    }
+
+    .footer-items ul {
+        width: 700px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-items ul li {
+        list-style: none;
+        margin-right: 30px;
+        line-height: 50px;
+    }
+}
