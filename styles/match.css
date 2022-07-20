@@ -20,6 +20,11 @@
     border-radius: 10px;
 }
 
+.left-part-item3 a:hover {
+    background-color: purple;
+    color: white;
+}
+
 .match-boxes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -32,6 +37,10 @@
     height: 242px;
     border: 1px solid #16161614;
     border-radius: 10px;
+}
+
+.match-box:hover {
+    background-color: orange;
 }
 
 .flag-item {

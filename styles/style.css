@@ -238,18 +238,32 @@ hr {
     font-size: 19px;
 }
 
+.footer-items ul li a:hover {
+    color: red;
+}
+
 .social-icon {
     color: gray;
     display: flex;
     justify-content: center;
     margin-top: 40px;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.fa-facebook,
+.fa-youtube {
+    color: gray;
 }
 
 .fa-facebook,
 .fa-youtube,
 .fa-instagram-square {
     margin-right: 23px;
+}
+
+.social-icon i:hover {
+    color: orange;
+    cursor: pointer;
 }
 
 /* ------------------------
